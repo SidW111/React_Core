@@ -1,7 +1,10 @@
 import "./App.css";
+import UseState from "./components/UseState";
 
 function App() {
-  return <div className="text-3xl underline bg-red-100">Hello</div>;
+  return <div>
+    <UseState/>
+  </div>;
 }
 
 export default App;
