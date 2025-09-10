@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa6";
-import Wrapper from "./Wrapper";
+import Wrapper from "./ReUsable/Wrapper";
+import Code from "./ReUsable/Code";
 
 export default function UseState() {
   const [count, setCount] = useState<number>(0);
@@ -18,9 +19,12 @@ export default function UseState() {
 
       <p>
         syntax :-
-        <p className="bg-gray-800 text-white p-2 rounded-xl mt-1">
+        
+          <Code>
+            
           const [state,setState]= useState(initialValue)
-        </p>
+          </Code>
+        
         <p>state &rarr; the current value</p>
         <p>
           setState &rarr; a function to update the value || the setter function

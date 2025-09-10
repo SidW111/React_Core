@@ -1,4 +1,5 @@
-import Wrapper from "./Wrapper";
+import Code from "./ReUsable/Code";
+import Wrapper from "./ReUsable/Wrapper";
 
 export default function Components() {
   return (
@@ -9,7 +10,9 @@ export default function Components() {
         UI.
       </p>
       <p>You can write components as a function or classes (old method)</p>
-      <p className="bg-gray-900 rounded-xl p-3 mt-2 text-white">
+      
+        <Code>
+
         export function Welcome(props) {"{"}
         <p>return return &lt;h1 &gt;Hello, {"props.name"}!&lt;/h1 &gt;</p>
         <p>{"}"}</p>
@@ -17,7 +20,8 @@ export default function Components() {
           const root = ReactDOM.createRoot(document.getElementById("root"));
         </p>
         <p>root.render( &lt; Welcome name="Savior" /&gt; );</p>
-      </p>
+        </Code>
+      
 
       <div className="mt-2">
         <p>
