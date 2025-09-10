@@ -6,6 +6,7 @@ import ReactMain from "./components/React";
 import UseState from "./components/UseState";
 import HandlingEvent from "./components/EventHandling";
 import ConditionalRendering from "./components/ConditionalRendering";
+import ControlledVsUnControlled from "./components/ControlledvsUncontrolled";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <HandlingEvent/>
       <ConditionalRendering/>
       <ListnKeys/>
+      <ControlledVsUnControlled/>
     </div>
   );
 }

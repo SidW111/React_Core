@@ -5,14 +5,19 @@ import Wrapper from "./ReUsable/Wrapper";
 export default function ListnKeys() {
   return (
     <Wrapper title="List and Keys">
+        <div>
+
       <p className="font-bold mb-1">what are lists?</p>
       <p>A list in react means showing multiple items on the screen.</p>
       <p className="">
+        <div>
+
         <ul className="list-disc pl-5">
           <li>A shopping app showing a list of products</li>
           <li>A chat app showing a list of messages</li>
           <li>A music app showing a list of songs</li>
         </ul>
+        </div>
       </p>
 
       <p className="font-bold mt-1 mb-1">what are Keys?</p>
@@ -45,6 +50,7 @@ export default function ListnKeys() {
         <p>)</p>
         <p>{"}"}</p>
       </Code>
+        </div>
     </Wrapper>
   );
 }
