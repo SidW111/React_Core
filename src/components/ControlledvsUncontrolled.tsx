@@ -1,11 +1,17 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
 
 export default function ControlledVsUnControlled() {
   const [input, setInput] = useState<string>("");
-  const handleControlled = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setInput(e.target.value);
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  const handleUncontrolled = (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log(inputRef.current?.value);
+  };
+
+  const handleControlled = () => {
     console.log(input);
   };
   return (
@@ -26,13 +32,24 @@ export default function ControlledVsUnControlled() {
           </li>
         </ul>
       </div>
-
-      <input
-        type="text"
-        value={input}
-        placeholder="Enter your name"
-        onChange={handleControlled}
-      />
+      <div className="pt-1 flex gap-2">
+        <input
+          className="border border-black rounded px-2 py-0.5 placeholder:text-black"
+          type="text"
+          value={input}
+          placeholder="Enter your name"
+          onChange={(e) => {setInput(e.target.value)}}
+        />
+        <button
+          className="bg-gray-200 border border-black px-2 py-1 rounded-md"
+          type="submit"
+          onClick={handleControlled}
+        >
+          {" "}
+          submit{" "}
+        </button>
+      </div>
+      <p>React reads the value on every keyStroke</p>
 
       <p className="font-bold pt-2">Uncontrolled Components</p>
       <div>
@@ -43,6 +60,23 @@ export default function ControlledVsUnControlled() {
           </li>
         </ul>
       </div>
+      <form onSubmit={handleUncontrolled} className="pt-1 flex gap-2">
+        <input
+          className="border border-black rounded px-2 py-0.5 placeholder:text-black"
+          type="text"
+          placeholder="Enter your name"
+          ref={inputRef}
+        />
+        <button
+          className="bg-gray-200 border border-black px-2 py-1 rounded-md"
+          type="submit"
+        >
+          {" "}
+          submit{" "}
+        </button>
+      </form>
+            <p>React reads the value when needed, not on every keyStroke</p>
+
       <p className="font-bold pt-2 pb-2">Real World analogy</p>
       <p>
         <span className="font-bold">Controlled</span>:- Teacher watching every
