@@ -2,10 +2,10 @@ import Code from "./ReUsable/Code";
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
 
-export default function HandlingEventsnConditional() {
+export default function HandlingEvent() {
   return (
-    <Wrapper title="Handling Events & Conditional Rendering">
-      <p className="text-2xl font-bold">Handling Events</p>
+    <Wrapper title="Handling Events">
+      {/* <p className="text-2xl font-bold">Handling Events</p> */}
       <p>React handles almost everything like HTML, but with few changes</p>
       <p>
         Events are written in camelCase ( <Highlight>onClick</Highlight>,
@@ -39,29 +39,6 @@ export default function HandlingEventsnConditional() {
       <p>
         React Uses JS <span className="font-bold">functions</span> not strings
       </p>
-
-      <p className="text-2xl font-bold mt-2 mb-1">Conditional Rendering</p>
-      <p className="">
-        React lets you render different UI based on conditions (like if or
-        ternary operator).{" "}
-      </p>
-      <p className="font-bold">Example:- Login Button</p>
-      <p>✅ If isLoggedIn = true → shows Logout.</p>
-      <p>✅ If isLoggedIn = false → shows Login.</p>
-      <Code>
-        <p>
-          function LoginButton({"{"} isLoggedIn {"}"}) {"{"}
-        </p>
-        <p>return (</p>
-        <p> &lt;div&gt; </p>
-        <p>
-          {"{"} isLoggedIn ? &lt;button&gt; Logout &lt; /button&gt; :
-          &lt;button&gt; Login &lt; /button&gt; {"}"}
-        </p>
-        <p> &lt;/div&gt; </p>
-        <p>);</p>
-        <p>{"}"}</p>
-      </Code>
     </Wrapper>
   );
 }

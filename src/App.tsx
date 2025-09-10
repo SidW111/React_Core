@@ -1,9 +1,11 @@
 import "./App.css";
 import Components from "./components/Components";
-import HandlingEventsnConditional from "./components/EventsnCond";
 import JSXRendering from "./components/JSXnRendering";
+import ListnKeys from "./components/ListsnKeys";
 import ReactMain from "./components/React";
 import UseState from "./components/UseState";
+import HandlingEvent from "./components/EventHandling";
+import ConditionalRendering from "./components/ConditionalRendering";
 
 function App() {
   return (
@@ -12,7 +14,9 @@ function App() {
       <JSXRendering />
       <Components />
       <UseState />
-      <HandlingEventsnConditional/>
+      <HandlingEvent/>
+      <ConditionalRendering/>
+      <ListnKeys/>
     </div>
   );
 }
