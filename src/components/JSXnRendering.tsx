@@ -1,6 +1,6 @@
 export default function JSXRendering() {
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center">
+    <div className="h-screen w-screen flex flex-col  justify-center items-center">
       <h1 className="font-bold text-3xl text-center p-2">
         JSX and Rendering elements
       </h1>

@@ -1,0 +1,53 @@
+export default function Components() {
+  return (
+    <div className="w-screen h-screen flex flex-col justify-center items-center">
+      <h1 className="text-3xl font-bold text-center p-2">Components</h1>
+      <div className="font-semibold mt-2 tracking-tight ">
+        <div className="p-2">
+          <p>In React, everything is built using components.</p>
+          <p className="mt-2">
+            A <span className="font-bold ">Component</span> is a reusable block
+            of UI.
+          </p>
+          <p>You can write components as a function or classes (old method)</p>
+          <p className="bg-gray-900 rounded-xl p-3 mt-2 text-white">
+            export function Welcome(props) {"{"}
+            <p>return return &lt;h1 &gt;Hello, {"props.name"}!&lt;/h1 &gt;</p>
+            <p>{"}"}</p>
+            <p>
+              const root = ReactDOM.createRoot(document.getElementById("root"));
+            </p>
+            <p>root.render( &lt; Welcome name="Savior" /&gt; );</p>
+          </p>
+
+          <div className="mt-2">
+            <p>
+              {" "}
+              <span className="font-bold">Welcome</span> is a component
+            </p>
+            <p>
+              {" "}
+              <span className="font-bold">Props</span> a shortform for
+              properties, like arguments to a function
+            </p>
+            <p>
+              ✅ <span className="font-bold">Props</span> lets you pass data
+              into components.
+            </p>
+          </div>
+          <div className="mt-2 ">
+            <p className="font-bold mb-2">Example</p>
+            <p>Think of a component like a coffee machine ☕.</p>
+            <div className="">
+              <ul className="list-disc pl-5">
+                <li>The machine = component.</li>
+                <li>The ingredients you give (sugar, milk, coffee type) = props.</li>
+                <li>The output (your coffee) changes depending on the props.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
