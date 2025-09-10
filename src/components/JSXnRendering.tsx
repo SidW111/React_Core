@@ -1,11 +1,8 @@
+import Wrapper from "./Wrapper"
+
 export default function JSXRendering() {
   return (
-    <div className="h-screen w-screen flex flex-col  justify-center items-center">
-      <h1 className="font-bold text-3xl text-center p-2">
-        JSX and Rendering elements
-      </h1>
-      <div className="font-semibold tracking-tight">
-        <div className="p-2">
+    <Wrapper title="JSX and Rendering Elements">
           <p className="font-bold text-2xl pb-2">JSX</p>
           <p className="mb-2 font-bold">
             JSX (Javascript XML) is a special syntax react uses to describe the
@@ -52,8 +49,6 @@ export default function JSXRendering() {
               root.render(element);
             </p>
           </div>
-        </div>
-      </div>
-    </div>
+        </Wrapper>
   );
 }

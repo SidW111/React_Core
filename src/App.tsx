@@ -1,5 +1,6 @@
 import "./App.css";
 import Components from "./components/Components";
+import HandlingEventsnConditional from "./components/EventsnCond";
 import JSXRendering from "./components/JSXnRendering";
 import ReactMain from "./components/React";
 import UseState from "./components/UseState";
@@ -11,6 +12,7 @@ function App() {
       <JSXRendering />
       <Components />
       <UseState />
+      <HandlingEventsnConditional/>
     </div>
   );
 }

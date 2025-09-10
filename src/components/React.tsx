@@ -1,9 +1,12 @@
+import Wrapper from "./Wrapper";
+
 export default function ReactMain() {
   return (
-    <div className="w-screen h-screen mx-auto flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold p-2">React</h1>
-      <div>
-        <div className="p-2">
+    <Wrapper title="React">
+    
+      
+   
+        <div>
           <p className=" font-bold mb-2">What is React?</p>
           <p className="font-semibold tracking-tight">
             React is a JavaScript library for building user interfaces (UI).
@@ -14,7 +17,7 @@ export default function ReactMain() {
             React updates the only part of the page that needs to be changed
           </p>
         </div>
-        <div className="p-2 ">
+        <div >
           <p className="font-bold mb-2">How React works?</p>
           <p className="font-semibold">
             It usually does the changes using the{" "}
@@ -34,7 +37,7 @@ export default function ReactMain() {
             and then updates only whats necessary in the real DOM
           </p>
         </div>
-        <div className="p-2 flex flex-col ">
+        <div className="flex flex-col">
           <p className="font-bold mb-2">Benefits Of React</p>
           <p className="font-semibold">
             <span className="font-bold"> Reuseable Components &rarr; </span>
@@ -59,7 +62,8 @@ export default function ReactMain() {
             React figures out how to update it.
           </p>
         </div>
-      </div>
-    </div>
+    
+
+    </Wrapper>
   );
 }
