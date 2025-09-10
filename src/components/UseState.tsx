@@ -16,18 +16,23 @@ export default function UseState() {
           <br />
           update the UI when that value changes
         </p>
-        <p className="p-3 font-semibold tracking-tight">
-          syntax
-          <br />
-          const [state,setState]= useState(initialValue)
-          <br />
-          state &rarr; the current value
-          <br />
-          setState &rarr; a function to update the value || the setter function
-          <br />
-          initialValue &rarr; the starting value
-          (number,string,object,array,boolean,functions,etc)
-        </p>
+        <div>
+          <p className="p-3 font-semibold tracking-tight">
+            syntax :-
+            <p className="bg-gray-800 text-white p-2 rounded-xl mt-1">
+              const [state,setState]= useState(initialValue)
+            </p>
+            <p>state &rarr; the current value</p>
+            <p>
+              setState &rarr; a function to update the value || the setter
+              function
+            </p>
+            <p>
+              initialValue &rarr; the starting value
+              (number,string,object,array,boolean,functions,etc)
+            </p>
+          </p>
+        </div>
         <p className="text-center p-2 font-bold">Example</p>
       </div>
       <div className="flex items-center gap-3 p-2">
@@ -38,13 +43,13 @@ export default function UseState() {
           className="px-4 py-1 font-semibold rounded bg-gray-200 flex items-center gap-1"
           onClick={() => setCount(count + 1)}
         >
-          Count <FaArrowUp/>
+          Count <FaArrowUp />
         </button>
         <button
           className="px-4 py-1 font-semibold rounded bg-gray-200 flex items-center gap-1"
           onClick={() => setCount(count - 1)}
         >
-          Count <FaArrowDown/>
+          Count <FaArrowDown />
         </button>
       </div>
     </div>

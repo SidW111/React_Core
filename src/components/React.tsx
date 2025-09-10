@@ -44,7 +44,7 @@ export default function ReactMain() {
           </p>
           <p className="font-semibold">
             <span className="font-bold">
-              Fast Updates with virtual DOM &rarr;
+              Fast Updates with virtual DOM &rarr;{" "}
             </span>
             Only updates whats needed.
           </p>
