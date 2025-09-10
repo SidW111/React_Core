@@ -5,23 +5,24 @@ export default function Components() {
   return (
     <Wrapper title="Components">
       <p>In React, everything is built using components.</p>
-      <p className="mt-2">
+      <p className="">
         A <span className="font-bold ">Component</span> is a reusable block of
         UI.
       </p>
       <p>You can write components as a function or classes (old method)</p>
-      
-        <Code>
 
-        export function Welcome(props) {"{"}
-        <p>return return &lt;h1 &gt;Hello, {"props.name"}!&lt;/h1 &gt;</p>
-        <p>{"}"}</p>
-        <p>
-          const root = ReactDOM.createRoot(document.getElementById("root"));
-        </p>
-        <p>root.render( &lt; Welcome name="Savior" /&gt; );</p>
-        </Code>
-      
+     <Code>
+  <pre>
+{`export function Welcome(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Welcome name="Savior" />);
+`}
+  </pre>
+</Code>
+
 
       <div className="mt-2">
         <p>

@@ -7,6 +7,7 @@ import UseState from "./components/UseState";
 import HandlingEvent from "./components/EventHandling";
 import ConditionalRendering from "./components/ConditionalRendering";
 import ControlledVsUnControlled from "./components/ControlledvsUncontrolled";
+import UseEffect from "./components/UseEffect";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ConditionalRendering/>
       <ListnKeys/>
       <ControlledVsUnControlled/>
+      <UseEffect/>
     </div>
   );
 }

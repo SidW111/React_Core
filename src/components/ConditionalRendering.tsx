@@ -11,18 +11,20 @@ export default function ConditionalRendering(){
       <p>✅ If isLoggedIn = true → shows Logout.</p>
       <p>✅ If isLoggedIn = false → shows Login.</p>
       <Code>
-        <p>
-          function LoginButton({"{"} isLoggedIn {"}"}) {"{"}
-        </p>
-        <p>return (</p>
-        <p> &lt;div&gt; </p>
-        <p>
-          {"{"} isLoggedIn ? &lt;button&gt; Logout &lt; /button&gt; :
-          &lt;button&gt; Login &lt; /button&gt; {"}"}
-        </p>
-        <p> &lt;/div&gt; </p>
-        <p>);</p>
-        <p>{"}"}</p>
-      </Code>
+  <pre>
+{`function LoginButton({ isLoggedIn }) {
+  return (
+    <div>
+      {isLoggedIn ? (
+        <button>Logout</button>
+      ) : (
+        <button>Login</button>
+      )}
+    </div>
+  );
+}`}
+  </pre>
+</Code>
+
     </Wrapper>
 }

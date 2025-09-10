@@ -36,16 +36,19 @@ export default function ListnKeys() {
           <p>it would re-render everything unnecessarily.</p>
         </div>
         <Code>
-          <p>function TodoList() {"{"}</p>
-          <p>const todos = [ "Learn React", "Build a project", "Get a job"];</p>
-          <p>return(</p>
-          <p>&lt;ul&gt;</p>
-          <p>
-            {"{"}todos.map((todo,index) =&gt; ( &lt;li&gt; key={"{"}index{"}"}
-            {"{"}todo{"}"}&lt;/li&gt;))
-          </p>
-          <p>)</p>
-          <p>{"}"}</p>
+          <pre>
+            {`function TodoList() {
+  const todos = ["Learn React", "Build a project", "Get a job"];
+
+  return (
+    <ul>
+      {todos.map((todo, index) => (
+        <li key={index}>{todo}</li>
+      ))}
+    </ul>
+  );
+}`}
+          </pre>
         </Code>
       </div>
     </Wrapper>
