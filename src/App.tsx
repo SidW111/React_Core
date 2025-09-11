@@ -9,6 +9,9 @@ import ConditionalRendering from "./components/ConditionalRendering";
 import ControlledVsUnControlled from "./components/ControlledvsUncontrolled";
 import UseEffect from "./components/UseEffect";
 import UseEffectCases from "./components/UseEffectCases";
+import UseContext from "./components/UseContext";
+import UseContextSyntax from "./components/UseContextSyntax";
+import UseReducer from "./components/UseReducer";
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
       <ControlledVsUnControlled/>
       <UseEffect/>
       <UseEffectCases/>
+      <UseContext/>
+      <UseContextSyntax/>
+      <UseReducer/>
     </div>
   );
 }
