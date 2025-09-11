@@ -12,6 +12,7 @@ import UseEffectCases from "./components/UseEffectCases";
 import UseContext from "./components/UseContext";
 import UseContextSyntax from "./components/UseContextSyntax";
 import UseReducer from "./components/UseReducer";
+import UseRef from "./components/UseRef";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <UseContext/>
       <UseContextSyntax/>
       <UseReducer/>
+      <UseRef/>
     </div>
   );
 }

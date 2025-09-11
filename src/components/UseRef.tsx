@@ -1,8 +1,26 @@
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
 
-export default function UseRef(){
-    return <Wrapper title="UseRef">
-        <p> <Highlight>useRef</Highlight> </p>
+export default function UseRef() {
+  return (
+    <Wrapper title="UseRef">
+      <p>
+        {" "}
+        <Highlight>useRef</Highlight> gives you a way to hold a mutable value
+        that:{" "}
+      </p>
+      <div>
+        <ul className="list-disc pl-5">
+          <li>
+            Persists between renders (doesn’t reset when the component
+            re-renders)
+          </li>
+          <li>Does not cause re-renders when changed</li>
+          <li>Can be used to directly reference DOM elements</li>
+        </ul>
+      </div>
+      <p>It’s like a hidden box where you can store something,</p>
+      <p>and React won’t care or re-render because of it.</p>
     </Wrapper>
+  );
 }
