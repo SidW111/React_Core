@@ -41,7 +41,7 @@ export default function ControlledVsUnControlled() {
           onChange={(e) => {setInput(e.target.value)}}
         />
         <button
-          className="bg-gray-200 border border-black px-2 py-1 rounded-md"
+          className="bg-gray-200 border border-black px-2 py-1 rounded-md  hover:bg-gray-400/50 transition-all duration-300"
           type="submit"
           onClick={handleControlled}
         >
@@ -68,7 +68,7 @@ export default function ControlledVsUnControlled() {
           ref={inputRef}
         />
         <button
-          className="bg-gray-200 border border-black px-2 py-1 rounded-md"
+          className="bg-gray-200 border border-black px-2 py-1 rounded-md  hover:bg-gray-400/50 transition-all duration-300"
           type="submit"
         >
           {" "}

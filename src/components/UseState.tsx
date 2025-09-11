@@ -38,13 +38,13 @@ export default function UseState() {
             counter : <span className="">{count}</span>{" "}
           </p>
           <button
-            className="px-4 py-1 font-semibold rounded bg-gray-200 flex items-center gap-1"
+            className="px-4 py-1 font-semibold rounded bg-gray-200 flex items-center gap-1 hover:bg-gray-400/50 transition-all duration-300"
             onClick={() => setCount(count + 1)}
           >
             Count <FaArrowUp />
           </button>
           <button
-            className="px-4 py-1 font-semibold rounded bg-gray-200 flex items-center gap-1"
+            className="px-4 py-1 font-semibold rounded bg-gray-200 flex items-center gap-1 hover:bg-gray-400/50 transition-all duration-300"
             onClick={() => setCount(count - 1)}
           >
             Count <FaArrowDown />
