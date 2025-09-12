@@ -1,3 +1,4 @@
+import Code from "./ReUsable/Code";
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
 
@@ -25,6 +26,22 @@ export default function UseRef() {
       <p>Access DOM elements(like focusing on input)</p>
       <p>store Timer IDs or previous values</p>
       <p>store data that changes but shouldn't trigger UI or render</p>
+      <p>Syntax</p>
+      <Code>
+        <pre>
+          {`import { useRef } from "react";
+      
+const refName = useRef(initialValue);
+      `}
+        </pre>
+      </Code>
+      <div>
+        <ul className="list-disc pl-5">
+          <li>refName.current gives you the stored value (or reference DOM element)</li>
+          <li>Stays the same between renders</li>
+        </ul>
+      </div>
+      
     </Wrapper>
   );
 }

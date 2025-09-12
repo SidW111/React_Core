@@ -13,6 +13,7 @@ import UseContext from "./components/UseContext";
 import UseContextSyntax from "./components/UseContextSyntax";
 import UseReducer from "./components/UseReducer";
 import UseRef from "./components/UseRef";
+import UseMemo from "./components/UseMemo";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
       <UseContextSyntax/>
       <UseReducer/>
       <UseRef/>
+      <UseMemo/>
     </div>
   );
 }
