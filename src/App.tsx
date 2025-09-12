@@ -14,6 +14,7 @@ import UseContextSyntax from "./components/UseContextSyntax";
 import UseReducer from "./components/UseReducer";
 import UseRef from "./components/UseRef";
 import UseMemo from "./components/UseMemo";
+import UseCallback from "./components/UseCallback";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <UseReducer/>
       <UseRef/>
       <UseMemo/>
+      <UseCallback/>
     </div>
   );
 }
