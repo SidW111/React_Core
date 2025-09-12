@@ -21,6 +21,10 @@ export default function UseRef() {
       </div>
       <p>It’s like a hidden box where you can store something,</p>
       <p>and React won’t care or re-render because of it.</p>
+      <p className="font-bold ">Common uses</p>
+      <p>Access DOM elements(like focusing on input)</p>
+      <p>store Timer IDs or previous values</p>
+      <p>store data that changes but shouldn't trigger UI or render</p>
     </Wrapper>
   );
 }
