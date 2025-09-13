@@ -17,6 +17,7 @@ import UseMemo from "./components/UseMemo";
 import UseCallback from "./components/UseCallback";
 import ReactMemo from "./components/ReactMemo";
 import ReactLazy from "./components/ReactLazy";
+import ReactRouting from "./components/ReactRouting";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <UseCallback/>
       <ReactMemo/>
       <ReactLazy/>
+      <ReactRouting/>
     </div>
   );
 }
