@@ -18,6 +18,7 @@ import UseCallback from "./components/UseCallback";
 import ReactMemo from "./components/ReactMemo";
 import ReactLazy from "./components/ReactLazy";
 import ReactRouting from "./components/ReactRouting";
+import Authentication from "./components/Authentication";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       <ReactMemo/>
       <ReactLazy/>
       <ReactRouting/>
+      <Authentication/>
     </div>
   );
 }
