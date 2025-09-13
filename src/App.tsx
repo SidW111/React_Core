@@ -16,6 +16,7 @@ import UseRef from "./components/UseRef";
 import UseMemo from "./components/UseMemo";
 import UseCallback from "./components/UseCallback";
 import ReactMemo from "./components/ReactMemo";
+import ReactLazy from "./components/ReactLazy";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <UseMemo/>
       <UseCallback/>
       <ReactMemo/>
+      <ReactLazy/>
     </div>
   );
 }
