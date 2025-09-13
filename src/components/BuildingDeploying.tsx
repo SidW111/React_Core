@@ -13,8 +13,15 @@ export default function BuildingDeploying() {
       <div>
         <ul className="list-decimal">
           <li>Vercel / Netlify → fast, simple CI/CD</li>
-          <li>AWS S3 + CloudFront → scalable</ li>
+          <li>AWS S3 + CloudFront → scalable</li>
           <li>Docker → containerized apps</li>
+        </ul>
+      </div>
+      <p className="font-bold text-xl">Tips</p>
+      <div>
+        <ul className="list-disc">
+          <li>Use .env files for API keys.</li>
+          <li>Optimize images and bundles for speed.</li>
         </ul>
       </div>
     </Wrapper>

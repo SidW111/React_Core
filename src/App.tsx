@@ -20,6 +20,7 @@ import ReactLazy from "./components/ReactLazy";
 import ReactRouting from "./components/ReactRouting";
 import Authentication from "./components/Authentication";
 import IntegratingAPI from "./components/IntegratingAPIs";
+import BuildingDeploying from "./components/BuildingDeploying";
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
       <ReactRouting/>
       <Authentication/>
       <IntegratingAPI/>
+      <BuildingDeploying/>
     </div>
   );
 }
