@@ -19,6 +19,7 @@ import ReactMemo from "./components/ReactMemo";
 import ReactLazy from "./components/ReactLazy";
 import ReactRouting from "./components/ReactRouting";
 import Authentication from "./components/Authentication";
+import IntegratingAPI from "./components/IntegratingAPIs";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
       <ReactLazy/>
       <ReactRouting/>
       <Authentication/>
+      <IntegratingAPI/>
     </div>
   );
 }
