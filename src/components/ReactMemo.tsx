@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Wrapper from "./ReUsable/Wrapper";
 import Code from "./ReUsable/Code";
 import Highlight from "./ReUsable/HighLight";
+import BackToHome from "./ReUsable/BackToHome";
 
 const Child1 = React.memo(function Children({ count }: { count: number }) {
   console.log("React memo child render");
@@ -76,6 +77,7 @@ export default function ReactMemo() {
       </p>
       <p>To use React.memo() effectively,</p>
       <p>also use useCallback and useMemo to keep prop references stable.</p>
+      <BackToHome />
     </Wrapper>
   );
 }

@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Wrapper from "./ReUsable/Wrapper";
 
 export default function ReactRouting() {
@@ -40,12 +41,13 @@ export default function ReactRouting() {
           <li>Access dynamic URL parameters.</li>
         </ul>
       </div>
-        <div>
+      <div>
         <p>5. Navigate</p>
         <ul className="list-disc">
           <li>Programmatic navigation or redirect.</li>
         </ul>
       </div>
+      <BackToHome />
     </Wrapper>
   );
 }

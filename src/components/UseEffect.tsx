@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
@@ -43,6 +44,7 @@ export default function UseEffect() {
         Cleanup function(Optional) → runs before the effect re-runs or when the
         component mounts
       </p>
+      <BackToHome />
     </Wrapper>
   );
 }

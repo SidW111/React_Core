@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
@@ -5,7 +6,6 @@ import Wrapper from "./ReUsable/Wrapper";
 export default function ReactLazy() {
   return (
     <Wrapper title="React.lazy- Lazy Loading Components">
-      
       <p>
         Normally, React loads all components at once (big bundle → slower load).
       </p>
@@ -41,6 +41,7 @@ function App() {
         Suspense is required to show a fallback UI (like a loader) while the
         component loads.
       </p>
+      <BackToHome />
     </Wrapper>
   );
 }

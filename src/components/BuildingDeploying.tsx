@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Wrapper from "./ReUsable/Wrapper";
 
@@ -24,6 +25,7 @@ export default function BuildingDeploying() {
           <li>Optimize images and bundles for speed.</li>
         </ul>
       </div>
+      <BackToHome />
     </Wrapper>
   );
 }

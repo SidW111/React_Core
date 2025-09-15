@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Wrapper from "./ReUsable/Wrapper";
 
@@ -11,18 +12,17 @@ export default function Components() {
       </p>
       <p>You can write components as a function or classes (old method)</p>
 
-     <Code>
-  <pre>
-{`export function Welcome(props) {
+      <Code>
+        <pre>
+          {`export function Welcome(props) {
   return <h1>Hello, {props.name}!</h1>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Welcome name="Savior" />);
 `}
-  </pre>
-</Code>
-
+        </pre>
+      </Code>
 
       <div className="mt-2">
         <p>
@@ -52,6 +52,7 @@ root.render(<Welcome name="Savior" />);
           </ul>
         </div>
       </div>
+      <BackToHome />
     </Wrapper>
   );
 }

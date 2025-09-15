@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
 
@@ -15,7 +16,9 @@ export default function UseContext() {
       </p>
       <p> directly, without passing the props through every layer.</p>
 
-      <p className="font-bold">Context API is a way to create global state that any component</p>
+      <p className="font-bold">
+        Context API is a way to create global state that any component
+      </p>
       <p className="font-bold">can read without prop drilling.</p>
       <p className="font-bold ">
         useContext is the hook that allows functional components to consume that
@@ -23,9 +26,12 @@ export default function UseContext() {
       </p>
       <div>
         <ul className="list-decimal pl-5">
-            <li>createContext() – Creates the context object.</li>
-            <li>Context.Provider – Wraps part of the component tree to provide a value.</li>
-            <li>useContext(context) – Lets any child read that value.</li>
+          <li>createContext() – Creates the context object.</li>
+          <li>
+            Context.Provider – Wraps part of the component tree to provide a
+            value.
+          </li>
+          <li>useContext(context) – Lets any child read that value.</li>
         </ul>
       </div>
       <p className="font-bold">Analogy</p>
@@ -46,6 +52,7 @@ export default function UseContext() {
           <Highlight>Consumer</Highlight> = Student(the one using the data)
         </p>
       </div>
+      <BackToHome />
     </Wrapper>
   );
 }

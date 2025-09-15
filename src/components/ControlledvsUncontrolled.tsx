@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
+import BackToHome from "./ReUsable/BackToHome";
 
 export default function ControlledVsUnControlled() {
   const [input, setInput] = useState<string>("");
@@ -88,6 +89,7 @@ export default function ControlledVsUnControlled() {
         the notebook at the end.
       </p>
       <p>React reads the value when submitting.</p>
+      <BackToHome/>
     </Wrapper>
   );
 }

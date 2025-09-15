@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Wrapper from "./ReUsable/Wrapper";
 
@@ -35,7 +36,11 @@ export default function UseEffectCases() {
         </pre>
       </Code>
       <p>Runs when state changes.</p>
-      <p className="bg-red-600 text-white px-1 py-1 rounded-xl mt-1">Sometimes effects create things that need cleanup (like event listeners or timers).</p>
+      <p className="bg-red-600 text-white px-1 py-1 rounded-xl mt-1">
+        Sometimes effects create things that need cleanup (like event listeners
+        or timers).
+      </p>
+      <BackToHome />
     </Wrapper>
   );
 }

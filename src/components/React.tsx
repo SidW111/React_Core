@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Wrapper from "./ReUsable/Wrapper";
 
 export default function ReactMain() {
@@ -59,6 +60,7 @@ export default function ReactMain() {
           React figures out how to update it.
         </p>
       </div>
+      <BackToHome />
     </Wrapper>
   );
 }

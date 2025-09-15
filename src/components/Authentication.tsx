@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Wrapper from "./ReUsable/Wrapper";
 
 export default function Authentication() {
@@ -39,6 +40,7 @@ export default function Authentication() {
           <li>Fetch user info → store session on frontend/backend.</li>
         </ul>
       </div>
+      <BackToHome/>
     </Wrapper>
   );
 }

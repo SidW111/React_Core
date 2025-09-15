@@ -1,9 +1,11 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Wrapper from "./ReUsable/Wrapper";
 
-export default function ConditionalRendering(){
-    return <Wrapper title={"Conditional Rendering"}>
-<p className="">
+export default function ConditionalRendering() {
+  return (
+    <Wrapper title={"Conditional Rendering"}>
+      <p className="">
         React lets you render different UI based on conditions (like if or
         ternary operator).{" "}
       </p>
@@ -11,8 +13,8 @@ export default function ConditionalRendering(){
       <p>✅ If isLoggedIn = true → shows Logout.</p>
       <p>✅ If isLoggedIn = false → shows Login.</p>
       <Code>
-  <pre>
-{`function LoginButton({ isLoggedIn }) {
+        <pre>
+          {`function LoginButton({ isLoggedIn }) {
   return (
     <div>
       {isLoggedIn ? (
@@ -23,8 +25,9 @@ export default function ConditionalRendering(){
     </div>
   );
 }`}
-  </pre>
-</Code>
-
+        </pre>
+      </Code>
+      <BackToHome />
     </Wrapper>
+  );
 }

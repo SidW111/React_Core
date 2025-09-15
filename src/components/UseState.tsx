@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa6";
 import Wrapper from "./ReUsable/Wrapper";
 import Code from "./ReUsable/Code";
+import BackToHome from "./ReUsable/BackToHome";
 
 export default function UseState() {
   const [count, setCount] = useState<number>(0);
@@ -50,7 +51,7 @@ export default function UseState() {
             Count <FaArrowDown />
           </button>
         </div>
-      
+      <BackToHome/>
     </Wrapper>
   );
 }

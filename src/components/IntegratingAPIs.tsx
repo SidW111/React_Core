@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Wrapper from "./ReUsable/Wrapper";
 
@@ -21,7 +22,7 @@ export default function IntegratingAPI() {
       <p>Advantages: fetch exactly what you need.</p>
       <Code>
         <pre>
-         {`query {
+          {`query {
   user(id: "1") {
     name
     email
@@ -30,6 +31,7 @@ export default function IntegratingAPI() {
 `}
         </pre>
       </Code>
+      <BackToHome />
     </Wrapper>
   );
 }

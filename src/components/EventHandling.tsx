@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
@@ -14,8 +15,8 @@ export default function HandlingEvent() {
       <p>Instead of Strings, you pass a function.</p>
       <p className="font-bold">Example</p>
       <Code>
-  <pre>
-{`function Button() {
+        <pre>
+          {`function Button() {
   function handleClick() {
     alert("Button clicked!");
   }
@@ -26,21 +27,22 @@ export default function HandlingEvent() {
     </button>
   );
 }`}
-  </pre>
-</Code>
+        </pre>
+      </Code>
 
       <p className="font-bold">In HTML</p>
       <Code>
-  <pre>
-{`<button onClick={handleClick}>
+        <pre>
+          {`<button onClick={handleClick}>
   Click Me
 </button>`}
-  </pre>
-</Code>
+        </pre>
+      </Code>
 
       <p>
         React Uses JS <span className="font-bold">functions</span> not strings
       </p>
+      <BackToHome />
     </Wrapper>
   );
 }

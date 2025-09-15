@@ -2,6 +2,7 @@ import { useReducer } from "react";
 import Wrapper from "./ReUsable/Wrapper";
 import Highlight from "./ReUsable/HighLight";
 import { PiMinus, PiPlus } from "react-icons/pi";
+import BackToHome from "./ReUsable/BackToHome";
 
 const initialState = { count: 0 };
 
@@ -66,7 +67,11 @@ export default function UseReducer() {
           </button>
         </div>
       </div>
-      <p className="pt-2"><Highlight>dispatch</Highlight> sends actions, and <Highlight>reducer</Highlight> decides how to update the state.</p>
+      <p className="pt-2">
+        <Highlight>dispatch</Highlight> sends actions, and{" "}
+        <Highlight>reducer</Highlight> decides how to update the state.
+      </p>
+      <BackToHome />
     </Wrapper>
   );
 }

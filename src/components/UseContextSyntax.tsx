@@ -1,11 +1,13 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Wrapper from "./ReUsable/Wrapper";
 
-export default function UseContextSyntax(){
-    return <Wrapper title={"UseContext Syntax"}>
-        <Code>
-            <pre>
-                {`import React, { createContext, useContext } from "react";
+export default function UseContextSyntax() {
+  return (
+    <Wrapper title={"UseContext Syntax"}>
+      <Code>
+        <pre>
+          {`import React, { createContext, useContext } from "react";
 
 const ThemeContext = createContext("light"); // create context
 
@@ -26,7 +28,9 @@ function Button() {
   return <button>{theme === "dark" ? "Dark Mode" : "Light Mode"}</button>;
 }
 `}
-            </pre>
-        </Code>
+        </pre>
+      </Code>
+      <BackToHome />
     </Wrapper>
+  );
 }

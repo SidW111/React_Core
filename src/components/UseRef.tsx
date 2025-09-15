@@ -1,3 +1,4 @@
+import BackToHome from "./ReUsable/BackToHome";
 import Code from "./ReUsable/Code";
 import Highlight from "./ReUsable/HighLight";
 import Wrapper from "./ReUsable/Wrapper";
@@ -37,11 +38,14 @@ const refName = useRef(initialValue);
       </Code>
       <div>
         <ul className="list-disc pl-5">
-          <li>refName.current gives you the stored value (or reference DOM element)</li>
+          <li>
+            refName.current gives you the stored value (or reference DOM
+            element)
+          </li>
           <li>Stays the same between renders</li>
         </ul>
       </div>
-      
+      <BackToHome />
     </Wrapper>
   );
 }
