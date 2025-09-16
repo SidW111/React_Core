@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import Wrapper from "./ReUsable/Wrapper";
 
 export default function Home() {
   return (
-    <Wrapper title="Home">
-      <div className="grid grid-cols-2 gap-4 pt-4">
-        <div className="flex flex-col">
+    <div className="min-h-screen w-full flex flex-col justify-center items-center px-4">
+      <h1 className="text-3xl font-bold mb-6 text-center">Home</h1>
+      <div className="grid grid-cols-2 md:gap-6 gap-2 font-semibold">
+        <div className="flex flex-col gap-1.5 text-start md:text-left">
           <Link className="hover:underline" to="/react">
             React
           </Link>
@@ -40,7 +40,8 @@ export default function Home() {
             useContext
           </Link>
         </div>
-        <div className="flex flex-col">
+
+        <div className="flex flex-col gap-1.5 text-start md:text-left">
           <Link className="hover:underline" to="/useContextSyntax">
             useContextSyntax
           </Link>
@@ -76,6 +77,6 @@ export default function Home() {
           </Link>
         </div>
       </div>
-    </Wrapper>
+    </div>
   );
 }
