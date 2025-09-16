@@ -1,7 +1,9 @@
 # ⚛️ React Core
 
 A **minimal interactive learning hub** for mastering the core concepts of [React](https://react.dev).  
-This project covers essential React topics with **simple explanations, code snippets, and navigation between concepts** — like a mini documentation site for beginners.
+This project covers essential React topics with **simple explanations, code snippets, and navigation between concepts** It's like a mini documentation site for beginners.
+OR
+A Quick revision website/sheet
 
 ---
 
