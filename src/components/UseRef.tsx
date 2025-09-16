@@ -29,12 +29,10 @@ export default function UseRef() {
       <p>store data that changes but shouldn't trigger UI or render</p>
       <p>Syntax</p>
       <Code>
-        <pre>
-          {`import { useRef } from "react";
+        {`import { useRef } from "react";
       
 const refName = useRef(initialValue);
       `}
-        </pre>
       </Code>
       <div>
         <ul className="list-disc pl-5">

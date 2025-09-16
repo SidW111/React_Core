@@ -29,14 +29,12 @@ export default function UseEffect() {
       </div>
       <p>Syntax</p>
       <Code>
-        <pre>
-          {`useEffect(() => {
+        {`useEffect(() => {
      code to run (effect)
   return () => {
      optional Cleanup
   }
 }, [dependencies])`}
-        </pre>
       </Code>
       <p>Effect function → runs after react renders the components</p>
       <p>Dependencies array → controls when the effect runs.</p>

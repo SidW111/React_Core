@@ -37,8 +37,7 @@ export default function ListnKeys() {
           <p>it would re-render everything unnecessarily.</p>
         </div>
         <Code>
-          <pre>
-            {`function TodoList() {
+          {`function TodoList() {
   const todos = ["Learn React", "Build a project", "Get a job"];
 
   return (
@@ -49,7 +48,6 @@ export default function ListnKeys() {
     </ul>
   );
 }`}
-          </pre>
         </Code>
       </div>
       <BackToHome />

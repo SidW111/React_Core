@@ -6,9 +6,7 @@ export default function BuildingDeploying() {
   return (
     <Wrapper title="Building and Deploying">
       <p className="font-bold text-xl">Build</p>
-      <Code>
-        <pre>{`npm run build`}</pre>
-      </Code>
+      <Code>{`npm run build`}</Code>
       <p>Creates production-ready static files (build/ folder).</p>
       <p className="font-bold text-xl">Deploy Options</p>
       <div>

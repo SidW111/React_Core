@@ -15,8 +15,7 @@ export default function HandlingEvent() {
       <p>Instead of Strings, you pass a function.</p>
       <p className="font-bold">Example</p>
       <Code>
-        <pre>
-          {`function Button() {
+        {`function Button() {
   function handleClick() {
     alert("Button clicked!");
   }
@@ -27,16 +26,13 @@ export default function HandlingEvent() {
     </button>
   );
 }`}
-        </pre>
       </Code>
 
       <p className="font-bold">In HTML</p>
       <Code>
-        <pre>
-          {`<button onClick={handleClick}>
+        {`<button onClick={handleClick}>
   Click Me
 </button>`}
-        </pre>
       </Code>
 
       <p>

@@ -31,8 +31,7 @@ export default function UseMemo() {
         </ul>
       </div>
       <Code>
-        <pre>
-          {`import { useMemo } from "react";
+        {`import { useMemo } from "react";
 
 const memoizedValue = useMemo(() => {
   // expensive calculation
@@ -40,7 +39,6 @@ const memoizedValue = useMemo(() => {
 }, [dependency1, dependency2]);
 
 `}
-        </pre>
       </Code>
       <BackToHome />
     </Wrapper>

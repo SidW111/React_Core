@@ -16,9 +16,7 @@ export default function UseCallback() {
       <p>
         same function reference between renders unless its dependencies change.
       </p>
-      <Code>
-        <pre>{`const memoizedFn = useCallback(fn, [deps]);`}</pre>
-      </Code>
+      <Code>{`const memoizedFn = useCallback(fn, [deps]);`}</Code>
       <div>
         <ul className="list-disc pl-5">
           <li>On first render → memoizedFn = fn</li>

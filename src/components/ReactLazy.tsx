@@ -16,8 +16,7 @@ export default function ReactLazy() {
       <p>It helps to reduce the initial bundle size.</p>
       <p>This is especially useful for routes or rarely used components.</p>
       <Code>
-        <pre>
-          {`// Lazy-load the About component
+        {`// Lazy-load the About component
 const About = React.lazy(() => import("./About"));
 
 function App() {
@@ -32,7 +31,6 @@ function App() {
   );
 }
 `}
-        </pre>
       </Code>
 
       <p>React.lazy() takes a function that returns a dynamic import.</p>

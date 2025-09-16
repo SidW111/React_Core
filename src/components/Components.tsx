@@ -13,15 +13,13 @@ export default function Components() {
       <p>You can write components as a function or classes (old method)</p>
 
       <Code>
-        <pre>
-          {`export function Welcome(props) {
+        {`export function Welcome(props) {
   return <h1>Hello, {props.name}!</h1>;
 }
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<Welcome name="Savior" />);
 `}
-        </pre>
       </Code>
 
       <div className="mt-2">

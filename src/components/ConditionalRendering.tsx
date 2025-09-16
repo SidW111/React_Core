@@ -13,8 +13,7 @@ export default function ConditionalRendering() {
       <p>✅ If isLoggedIn = true → shows Logout.</p>
       <p>✅ If isLoggedIn = false → shows Login.</p>
       <Code>
-        <pre>
-          {`function LoginButton({ isLoggedIn }) {
+        {`function LoginButton({ isLoggedIn }) {
   return (
     <div>
       {isLoggedIn ? (
@@ -25,7 +24,6 @@ export default function ConditionalRendering() {
     </div>
   );
 }`}
-        </pre>
       </Code>
       <BackToHome />
     </Wrapper>

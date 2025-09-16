@@ -34,15 +34,13 @@ export default function JSXRendering() {
           <Highlight>root.render()</Highlight>.
         </p>
         <Code>
-          <pre>
-            {`import React from "react";
+          {`import React from "react";
 import ReactDOM from "react-dom/client";
 
 const element = <h1>Hello, React!</h1>;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(element);`}
-          </pre>
         </Code>
       </div>
       <BackToHome />
