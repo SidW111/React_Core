@@ -47,3 +47,9 @@ A Quick revision website/sheet
  - Deepen understanding of React core concepts
  - Practice building reusable components
  - Create a beginner-friendly reference site
+
+ ---
+
+ This project is open source and available under the [MIT License](LICENSE).
+
+---
