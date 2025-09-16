@@ -16,14 +16,17 @@ export default function JSXRendering() {
       </p>
       <div className="flex flex-col gap-1">
         <p className="font-bold">Lets see with an example :-</p>
-        <Code>const element = &lt;h1&gt; Hello, Everyone! &lt;/ h1&gt;;</Code>
+        <div>
+          <Code>const element = &lt;h1&gt; Hello, Everyone! &lt;/ h1&gt;;</Code>
+        </div>
         <p className="font-bold">
           Behind the scenes, React converts this things into{" "}
         </p>
-
-        <Code>
-          const element = React.createElement("h1", null, "Hello, Everyone!");
-        </Code>
+        <div>
+          <Code>
+            const element = React.createElement("h1", null, "Hello, Everyone!");
+          </Code>
+        </div>
 
         <p>JSX = HTML-like syntax inside JS, easier to understand.</p>
       </div>
@@ -33,15 +36,17 @@ export default function JSXRendering() {
           React uses <Highlight>React.createRoot()</Highlight> and{" "}
           <Highlight>root.render()</Highlight>.
         </p>
-        <Code>
-          {`import React from "react";
+        <div>
+          <Code>
+            {`import React from "react";
 import ReactDOM from "react-dom/client";
 
 const element = <h1>Hello, React!</h1>;
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(element);`}
-        </Code>
+          </Code>
+        </div>
       </div>
       <BackToHome />
     </Wrapper>

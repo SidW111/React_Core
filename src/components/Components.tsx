@@ -11,16 +11,18 @@ export default function Components() {
         UI.
       </p>
       <p>You can write components as a function or classes (old method)</p>
+<div>
 
       <Code>
         {`export function Welcome(props) {
   return <h1>Hello, {props.name}!</h1>;
-}
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Welcome name="Savior" />);
-`}
+  }
+  
+  const root = ReactDOM.createRoot(document.getElementById("root"));
+  root.render(<Welcome name="Savior" />);
+  `}
       </Code>
+  </div>
 
       <div className="mt-2">
         <p>

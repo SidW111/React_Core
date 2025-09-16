@@ -18,7 +18,7 @@ export default function BuildingDeploying() {
       </div>
       <p className="font-bold text-xl">Tips</p>
       <div>
-        <ul className="list-disc">
+        <ul className="list-disc pl-5">
           <li>Use .env files for API keys.</li>
           <li>Optimize images and bundles for speed.</li>
         </ul>

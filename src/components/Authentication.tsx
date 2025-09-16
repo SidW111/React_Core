@@ -7,7 +7,7 @@ export default function Authentication() {
       <p className="text-lg font-bold">JWT (JSON Web Token)</p>
       <div>
         <p>1. Login flow</p>
-        <ul className="list-disc">
+        <ul className="list-disc pl-5">
           <li>
             User Submits credentials → backend validates → returns JWT token.
           </li>
@@ -18,14 +18,14 @@ export default function Authentication() {
       </div>
       <div>
         <p>2. Using JWT</p>
-        <ul className="list-disc">
+        <ul className="list-disc pl-5">
           <li>Send token in Authorization header with API requests.</li>
           <li>Backend validates token for protected routes.</li>
         </ul>
       </div>
       <div>
         <p>3. Logout</p>
-        <ul className="list-disc">
+        <ul className="list-disc pl-5">
           <li>Remove token from storage.</li>
           <li>Redirect to login.</li>
         </ul>
@@ -34,7 +34,7 @@ export default function Authentication() {
       <p>1. Third party login (Google, Github, Facebook)</p>
       <div>
         <p>2. Flow:</p>
-        <ul className="list-disc">
+        <ul className="list-disc pl-5">
           <li>Redirect user to provider login.</li>
           <li>Provider returns access token.</li>
           <li>Fetch user info → store session on frontend/backend.</li>
