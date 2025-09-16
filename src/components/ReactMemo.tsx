@@ -60,7 +60,7 @@ export default function ReactMemo() {
             </button>
             <button
               onClick={() => setC(c - 1)}
-              className="px-4 py-2 cursor-pointer bg-white rounded-md text-black"
+              className="px-4 py-2 cursor-pointer bg-white rounded-md text-black "
             >
               -
             </button>
