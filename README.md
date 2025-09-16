@@ -38,3 +38,12 @@ A Quick revision website/sheet
 - 💨 [Tailwind CSS](https://tailwindcss.com/)
 
 ---
+
+
+## 📌 Purpose
+
+### This project was built as a personal learning companion to:
+
+ - Deepen understanding of React core concepts
+ - Practice building reusable components
+ - Create a beginner-friendly reference site
