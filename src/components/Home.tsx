@@ -78,9 +78,9 @@ export default function Home() {
             Building & Deploying
           </Link>
         </div>
-        <footer className=" py-4 text-sm font-bold text-gray-800">
+        {/* <footer className=" py-4 text-sm font-bold text-gray-800">
           Made by Sid with ❤️
-        </footer>
+        </footer> */}
       </div>
     </div>
   );
