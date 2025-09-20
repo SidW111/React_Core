@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="min-h-screen w-full flex flex-col justify-center items-center px-4">
-      <h1 className="text-3xl font-bold mb-6 text-center">React Revision Sheet</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center">
+        React Revision Hub
+      </h1>
       <div className="grid grid-cols-2 md:gap-6 gap-2 font-semibold">
         <div className="flex flex-col gap-1.5 text-start md:text-left">
           <Link className="hover:underline" to="/react">
@@ -76,6 +78,9 @@ export default function Home() {
             Building & Deploying
           </Link>
         </div>
+        <footer className=" py-4 text-sm font-bold text-gray-800">
+          Made by Sid with ❤️
+        </footer>
       </div>
     </div>
   );
